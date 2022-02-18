@@ -19,7 +19,7 @@ public class Zadanie1 {
     LD1.add(LocalDate.of(2012,2,21));
     System.out.println(redukuj(LD1,3));
     }
-    public static <E extends LinkedList<?>>LinkedList redukuj(E list, int n){
+    public static <E extends LinkedList<?>>E redukuj(E list, int n){
         for(int i=n-1;i<list.size();i=i+n-1){
             list.remove(i);
         }
